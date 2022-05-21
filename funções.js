@@ -53,74 +53,80 @@ alert('Frequência preenchida!')
 
 }
 
-function buscar_dias() {
+
+function preencher_tabela(dia,horario, descriçao){
+    let linha = document.createElement('tr');
+    let linha_data_1 = document.createElement('td');
+    linha_data_1.innerHTML = dia
+    let linha_data_2 = document.createElement('td');
+    linha_data_2.innerHTML = horario
+    let linha_data_3 = document.createElement('td');
+    linha_data_3.innerHTML = descriçao
+    linha.appendChild(linha_data_1);
+    linha.appendChild(linha_data_2);
+    linha.appendChild(linha_data_3);
+    return linha
+}
+
+function gerar_tabela() {
     let month = Number(document.querySelector('input#month').value)
+
+    let table = document.createElement('table')
+    let thead = document.createElement('thead')
+    let tbody = document.createElement('tbody')
+
+    table.appendChild(thead)
+    table.appendChild(tbody)
+
+    document.querySelector('body').appendChild(table)
+
+    let linha_cabeçalho = document.createElement('tr');
+    let cabeçalho1 = document.createElement('th');
+    cabeçalho1.innerHTML = "Dia";
+    let cabeçalho2 = document.createElement('th');
+    cabeçalho2.innerHTML = "Horário";
+    let cabeçalho3 = document.createElement('th');
+    cabeçalho3.innerHTML = "Descrição";
+
+    linha_cabeçalho.appendChild(cabeçalho1);
+    linha_cabeçalho.appendChild(cabeçalho2);
+    linha_cabeçalho.appendChild(cabeçalho3);
+    thead.appendChild(linha_cabeçalho);
 
     for(let now_day = 1, _last_day = 31; now_day <= _last_day; now_day+=1){
         let date = new Date(2022,month,now_day)
         switch (date.getDay()) {
             case 0:
                 domingo.push(date.getDate())
+                tbody.appendChild(preencher_tabela(date.getDate(),domingo_horário,domingo_descrição));
                 break
             case 1:
                 segunda.push(date.getDate())
+                tbody.appendChild(preencher_tabela(date.getDate(),segunda_horário,segunda_descrição));
                 break
             case 2:
                 terça.push(date.getDate())
+                tbody.appendChild(preencher_tabela(date.getDate(),terça_horário,terça_descrição));
                 break
             case 3:
                 quarta.push(date.getDate())
+                tbody.appendChild(preencher_tabela(date.getDate(),quarta_horário,quarta_descrição));
                 break
             case 4:
                 quinta.push(date.getDate())
+                tbody.appendChild(preencher_tabela(date.getDate(), quinta_horário,quinta_descrição));
                 break
             case 5:
                 sexta.push(date.getDate())
+                tbody.appendChild(preencher_tabela(date.getDate(),sexta_horário,sexta_descrição));
                 break
             case 6:
                 sábado.push(date.getDate())
+                tbody.appendChild(preencher_tabela(date.getDate(),sabado_horário,sabado_descrição));
                 break
         }
     }
     alert(month)
     alert(domingo)
     alert('ok')
-}
-
-function gerar_tabela() {
-//apenas um código de exemplo para criar minha tabela depois
-let table = document.createElement('table')
-let thead = document.createElement('thead')
-let tbody = document.createElement('tbody')
-
-table.appendChild(thead)
-table.appendChild(tbody)
-
-document.querySelector('body').appendChild(table)
-
-let row_1 = document.createElement('tr');
-let heading_1 = document.createElement('th');
-heading_1.innerHTML = "Sr. No.";
-let heading_2 = document.createElement('th');
-heading_2.innerHTML = "Name";
-let heading_3 = document.createElement('th');
-heading_3.innerHTML = "Company";
-
-row_1.appendChild(heading_1);
-row_1.appendChild(heading_2);
-row_1.appendChild(heading_3);
-thead.appendChild(row_1);
-
-let row_2 = document.createElement('tr');
-let row_2_data_1 = document.createElement('td');
-row_2_data_1.innerHTML = segunda_horário
-let row_2_data_2 = document.createElement('td');
-row_2_data_2.innerHTML = segunda_descrição
-let row_2_data_3 = document.createElement('td');
-row_2_data_3.innerHTML = "Netflix";
-
-row_2.appendChild(row_2_data_1);
-row_2.appendChild(row_2_data_2);
-row_2.appendChild(row_2_data_3);
-tbody.appendChild(row_2);
 }
