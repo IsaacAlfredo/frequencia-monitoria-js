@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div>Hello World</div>
+    <div>
+        <input id="month">numero do mês</input>
+    </div>
     <div>
         <input id="segh">Horário segunda</input>
         <input id="segd">Descrição segunda</input>
@@ -36,9 +38,10 @@
         <input id="domh">Horário domingo</input>
         <input id="domd">Descrição domingo</input>
     </div>
-    <div id="teste">teste</div>
-    <button onclick="preencherFrequencia()">Preencher frequencia</button>
-    <button onclick="gerarTabela()">Gerar tabela</button>
+
+    <button onclick="preencher_frequencia()">Preencher frequencia</button>
+    <button onclick="gerar_tabela()">Gerar tabela</button>
+    <button onclick="buscar_dias()">Buscar dias</button>
 
     <script src="funções.js"></script>
 </body>

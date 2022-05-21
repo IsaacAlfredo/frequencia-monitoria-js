@@ -19,8 +19,15 @@ var sabado_descrição
 var domingo_horário
 var domingo_descrição
 
+var segunda = []
+var terça = []
+var quarta = []
+var quinta = []
+var sexta = []
+var sábado = []
+var domingo = []
 
-function preencherFrequencia(){
+function preencher_frequencia(){
 segunda_horário = document.querySelector('input#segh').value
 segunda_descrição = document.querySelector('input#segd').value
 
@@ -45,7 +52,42 @@ domingo_descrição = document.querySelector('input#domd').value
 alert('Frequência preenchida!')
 
 }
-function gerarTabela() {
+
+function buscar_dias() {
+    let month = Number(document.querySelector('input#month').value)
+
+    for(let now_day = 1, _last_day = 31; now_day <= _last_day; now_day+=1){
+        let date = new Date(2022,month,now_day)
+        switch (date.getDay()) {
+            case 0:
+                domingo.push(date.getDate())
+                break
+            case 1:
+                segunda.push(date.getDate())
+                break
+            case 2:
+                terça.push(date.getDate())
+                break
+            case 3:
+                quarta.push(date.getDate())
+                break
+            case 4:
+                quinta.push(date.getDate())
+                break
+            case 5:
+                sexta.push(date.getDate())
+                break
+            case 6:
+                sábado.push(date.getDate())
+                break
+        }
+    }
+    alert(month)
+    alert(domingo)
+    alert('ok')
+}
+
+function gerar_tabela() {
 //apenas um código de exemplo para criar minha tabela depois
 let table = document.createElement('table')
 let thead = document.createElement('thead')
