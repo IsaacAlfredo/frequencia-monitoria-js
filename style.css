@@ -1,17 +1,32 @@
 h1{
     margin: auto;
     width: 25%;
+    color: aliceblue;
 }
 div{
     margin: 10px auto;
     width: 60%;
-    border: 3px solid grey;
+    border: 3px solid black;
     padding: 10px;
     box-sizing: border-box;
+    background-color:rgba(37, 36, 36, 0.7);
 }
 span{
     margin: 10px;
+    color: aliceblue;
+    font-family:sans-serif;
+    font-weight: bold;
 }
 
-input{
+body{
+    background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=628&q=80);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,50%);
+}
+
+table{
+    background-color: blue;
 }
