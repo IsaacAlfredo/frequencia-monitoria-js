@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-16">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-16" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Frequência - Monitoria</h1>
-    <div class="external_div">
-        <label for="month" id="month_label">Número do mês
-            <input id="month">
-        </label>
-        
+  <h1>Frequência - Monitoria</h1>
+  <div class="external_div">
+    <label for="month" id="month_label">Número do mês
+      <input id="month" />
+    </label>
+  </div>
+  <div class="external_div">
+    <div>
+      <label for="segh">
+        Horário Segunda
+        <input id="segh" />
+      </label>
     </div>
-    <div class="external_div">
-        <div>
-            <label for="segh">
-            Horário Segunda
-            <input id="segh">
-        </label>
-        </div>
-        <div>
-            <label for="segd">
-            Descrição Segunda
-            <input id="segd" class="descrição">
-        </label>
-        </div>
+    <div>
+      <label for="segd">
+        Descrição Segunda
+        <input id="segd" class="descrição" />
+      </label>
     </div>
+  </div>
 
-    <div class="external_div">
-        
-        <div>
-            <label for="terh">
-                Horário Terça
-                <input id="terh">
-            </label>
-        </div>
-        <div>
-        <label for="terd">
-                Descrição Terça
-                <input id="terd" class="descrição">
-            </label>
-        </div>
-            
-
+  <div class="external_div">
+    <div>
+      <label for="terh">
+        Horário Terça
+        <input id="terh" />
+      </label>
     </div>
-
-    <div class="external_div">
-        <div>
-            <label for="quah"> Horário Quarta
-                <input id="quah">
-            </label>
-        </div>
-        <div>
-            <label for="quad"> Descrição Quarta
-                <input id="quad" class="descrição"> 
-            </label>
-        </div>
+    <div>
+      <label for="terd">
+        Descrição Terça
+        <input id="terd" class="descrição" />
+      </label>
     </div>
+  </div>
 
-    <div class="external_div">
-        <div>
-            <label for="quih"> Horário Quinta
-                <input id="quih">
-            </label>
-        </div>
-        <div>
-            <label for="quid"> Descrição Quinta
-                <input id="quid" class="descrição">
-            </label> 
-        </div>
+  <div class="external_div">
+    <div>
+      <label for="quah">
+        Horário Quarta
+        <input id="quah" />
+      </label>
     </div>
-
-    <div class="external_div">
-        <div>
-            <label for="sexh"> Horário Sexta
-                <input id="sexh">
-            </label>
-        </div>
-        <div>
-            <label for="sexd"> Descrição Sexta
-                <input id="sexd" class="descrição">
-            </label>
-        </div>
+    <div>
+      <label for="quad">
+        Descrição Quarta
+        <input id="quad" class="descrição" />
+      </label>
     </div>
+  </div>
 
-    <div class="external_div">
-
-        <div>
-            <label for="sabh"> Horário Sábado
-                <input id="sabh">
-            </label>
-        </div>
-        <div>
-            <label for="sabd"> Descrição Sábado
-                <input id="sabd" class="descrição">
-            </label>
-        </div>
+  <div class="external_div">
+    <div>
+      <label for="quih">
+        Horário Quinta
+        <input id="quih" />
+      </label>
     </div>
-
-    <div class="external_div">
-        <div>
-            <label for="domh"> Horário Domingo
-                <input id="domh">
-            </label>
-        </div>
-        <div>
-            <label for="domd"> Descrição Domingo
-                <input id="domd" class="descrição">
-            </label>
-        </div>
+    <div>
+      <label for="quid">
+        Descrição Quinta
+        <input id="quid" class="descrição" />
+      </label>
     </div>
+  </div>
 
-    <button onclick="preencher_frequencia()">Preencher frequencia</button>
-    <button onclick="gerar_tabela()">Gerar tabela</button>
+  <div class="external_div">
+    <div>
+      <label for="sexh">
+        Horário Sexta
+        <input id="sexh" />
+      </label>
+    </div>
+    <div>
+      <label for="sexd">
+        Descrição Sexta
+        <input id="sexd" class="descrição" />
+      </label>
+    </div>
+  </div>
 
-    <script src="funções.js"></script>
+  <div class="external_div">
+    <div>
+      <label for="sabh">
+        Horário Sábado
+        <input id="sabh" />
+      </label>
+    </div>
+    <div>
+      <label for="sabd">
+        Descrição Sábado
+        <input id="sabd" class="descrição" />
+      </label>
+    </div>
+  </div>
+
+  <div class="external_div">
+    <div>
+      <label for="domh">
+        Horário Domingo
+        <input id="domh" />
+      </label>
+    </div>
+    <div>
+      <label for="domd">
+        Descrição Domingo
+        <input id="domd" class="descrição" />
+      </label>
+    </div>
+  </div>
+
+  <button onclick="preencher_frequencia()">Preencher frequencia</button>
+
+  <script src="funções.js"></script>
 </body>
+
 </html>
