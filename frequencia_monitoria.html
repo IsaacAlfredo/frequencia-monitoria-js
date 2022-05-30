@@ -9,37 +9,109 @@
 </head>
 <body>
     <h1>Frequência - Monitoria</h1>
-    <div>
-        <input id="month"><span>numero do mês</span> 
-    </div>
-    <div>
-        <input id="segh"><span>Horário segunda</span> 
-        <input id="segd" class="descrição"><span>Descrição segunda</span> 
-    </div>
-    <div>
-        <input id="terh"><span>Horário terça</span>
-        <input id="terd" class="descrição"><span>Descrição terça</span>
-    </div>
-    <div>
-        <input id="quah"><span>Horário quarta</span>
-        <input id="quad" class="descrição"><span>Descrição quarta</span>   
-    </div>
-    <div>
-        <input id="quih"><span>Horário quinta</span>
-        <input id="quid" class="descrição"><span>Descrição quinta</span>
+    <div class="external_div">
+        <label for="month" id="month_label">Número do mês
+            <input id="month">
+        </label>
         
     </div>
-    <div>
-        <input id="sexh"><span>Horário sexta</span>
-        <input id="sexd" class="descrição"><span>Descrição sexta</span>
+    <div class="external_div">
+        <div>
+            <label for="segh">
+            Horário Segunda
+            <input id="segh">
+        </label>
+        </div>
+        <div>
+            <label for="segd">
+            Descrição Segunda
+            <input id="segd" class="descrição">
+        </label>
+        </div>
     </div>
-    <div>
-        <input id="sabh"><span>Horário sábado</span>
-        <input id="sabd" class="descrição"><span>Descrição sábado</span>
+
+    <div class="external_div">
+        
+        <div>
+            <label for="terh">
+                Horário Terça
+                <input id="terh">
+            </label>
+        </div>
+        <div>
+        <label for="terd">
+                Descrição Terça
+                <input id="terd" class="descrição">
+            </label>
+        </div>
+            
+
     </div>
-    <div>
-        <input id="domh"><span>Horário domingo </span>
-        <input id="domd" class="descrição"><span>Descrição domingo</span>
+
+    <div class="external_div">
+        <div>
+            <label for="quah"> Horário Quarta
+                <input id="quah">
+            </label>
+        </div>
+        <div>
+            <label for="quad"> Descrição Quarta
+                <input id="quad" class="descrição"> 
+            </label>
+        </div>
+    </div>
+
+    <div class="external_div">
+        <div>
+            <label for="quih"> Horário Quinta
+                <input id="quih">
+            </label>
+        </div>
+        <div>
+            <label for="quid"> Descrição Quinta
+                <input id="quid" class="descrição">
+            </label> 
+        </div>
+    </div>
+
+    <div class="external_div">
+        <div>
+            <label for="sexh"> Horário Sexta
+                <input id="sexh">
+            </label>
+        </div>
+        <div>
+            <label for="sexd"> Descrição Sexta
+                <input id="sexd" class="descrição">
+            </label>
+        </div>
+    </div>
+
+    <div class="external_div">
+
+        <div>
+            <label for="sabh"> Horário Sábado
+                <input id="sabh">
+            </label>
+        </div>
+        <div>
+            <label for="sabd"> Descrição Sábado
+                <input id="sabd" class="descrição">
+            </label>
+        </div>
+    </div>
+
+    <div class="external_div">
+        <div>
+            <label for="domh"> Horário Domingo
+                <input id="domh">
+            </label>
+        </div>
+        <div>
+            <label for="domd"> Descrição Domingo
+                <input id="domd" class="descrição">
+            </label>
+        </div>
     </div>
 
     <button onclick="preencher_frequencia()">Preencher frequencia</button>
