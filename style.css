@@ -41,6 +41,9 @@ label {
 input {
   width: 200px;
   box-sizing: border-box;
+  background-color: #dfe1ff;
+  color: #111827;
+  border-radius: 5px;
 }
 body {
   background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=628&q=80);
@@ -95,5 +98,17 @@ button:focus {
 }
 
 table {
-  background-color: blue;
+  background-color: #111827;
+  border: 5px double black;
+  box-sizing: border-box;
+  color: aliceblue;
+  border-radius: 10px;
+}
+thead {
+  background-color: #111827;
+  color: aliceblue;
+}
+tbody {
+  background-color: #dfe1ff;
+  color: #111827;
 }
