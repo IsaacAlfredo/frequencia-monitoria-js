@@ -31,16 +31,23 @@ label {
 
 #month {
   width: 30px;
-  margin: 0 auto;
+}
+#year {
+  width: 50px;
 }
 
-#month_label {
+.date_label {
   width: 300px;
   font-size: 16px;
 }
 
+#year_div {
+  width: 90px;
+  margin: 10px 300px;
+}
+
 #month_div {
-  width: 170px;
+  width: 157px;
   margin: 10px 300px;
 }
 

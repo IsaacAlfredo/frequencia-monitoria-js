@@ -68,6 +68,7 @@ function preencher_tabela(dia, horario, descriçao) {
 
 function gerar_tabela() {
   let month = Number(document.querySelector("input#month").value);
+  let year = Number(document.querySelector("input#year").value);
 
   let table = document.createElement("table");
   let thead = document.createElement("thead");
@@ -92,7 +93,7 @@ function gerar_tabela() {
   thead.appendChild(linha_cabeçalho);
 
   for (let now_day = 1, _last_day = 31; now_day <= _last_day; now_day += 1) {
-    let date = new Date(2022, month, now_day);
+    let date = new Date(year, month, now_day);
     switch (date.getDay()) {
       case 0:
         domingo.push(date.getDate());
